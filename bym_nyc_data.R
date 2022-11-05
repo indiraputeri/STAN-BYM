@@ -1,5 +1,5 @@
 library(readr)
-N <- 281
+N = 281
 N_edges <- 
 node1 <-
 node2 <-
