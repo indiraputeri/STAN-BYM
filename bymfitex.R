@@ -1,11 +1,13 @@
 #Learning mitzimorris Code to Map NYTracts Data
-#Source: xxx
+#Source: https://mc-stan.org/users/documentation/case-studies/icar_stan.html
+#github source: stan-dev/example-models/knitr/car-iar-poisson
 
 library(maptools);
 library(spdep);
 library(rgdal)
 library(rstan);
 options(mc.cores = 3);
+
 
 load("nyc_subset.data.R");
 

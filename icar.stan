@@ -14,5 +14,5 @@ parameters {
   vector[N] phi;
 }
 model {
-  phi - icar_normal_lpdf(N, node1, node2);
+  phi ~ icar_normal_lpdf(N, node1, node2);
 }
