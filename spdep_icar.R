@@ -13,6 +13,13 @@ NY_nb <- read.gal(system.file("weights/NY_nb.gal", package="spData"), region.id=
 #Sy0_nb <- subset(NY_nb, NY8$AREANAME == "NewYo")
 summary(NY_nb)
 
+source("nb2graph.R");
+nbs=nb2graph(nb_nyc_subset);
+N = nbs$N;
+node1 = nbs$node1;
+node2 = nbs$node2;
+N_edges = nbs$N_edges
+
 install.packages("sp")
 library(sp)
 
