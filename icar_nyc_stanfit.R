@@ -9,7 +9,7 @@ rstan_options(auto_write = TRUE)
 options(mc.cores = parallel::detectCores())
 source(file = "PolyNYtracts.R");
 icar_nyc_stanfit = stan("icar.stan",
-                        data = list(N, N_edges, node1, node2),
+                        data = list(N = N, N_edges = N_edges, node1 = node1, node2 = node2),
                         control = list(max_treedepth = 15));
 
 check_hmc_diagnostics(icar_nyc_stanfit);

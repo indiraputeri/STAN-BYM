@@ -1,7 +1,7 @@
 install.packages("lwgeom")
 install.packages("sf")
 install.packages("sp")
-install.packages("spdep")
+#install.packages("spdep")
 
 library(spdep)
 library(sf)

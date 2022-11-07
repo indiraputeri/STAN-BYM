@@ -1,4 +1,4 @@
-function {
+functions {
   real icar_normal_lpdf(vector phi, int N, int[] node1, int[] node2) {
     return -0.5 * dot_self(phi[node1] - phi[node2])
       + normal_lpdf(sum(phi) | 0, 0.001 * N);
