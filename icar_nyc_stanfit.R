@@ -14,3 +14,5 @@ icar_nyc_stanfit = stan("icar.stan",
 
 check_hmc_diagnostics(icar_nyc_stanfit);
 print(icar_nyc_stanfit, probs = c(0.25, 0.75), digits_summary = 1)
+
+phi_mcmc <- extract(icar_nyc_stanfit)
